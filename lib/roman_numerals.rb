@@ -9,8 +9,10 @@ def roman_numerals(input)
   romanCounter = 1
 
   0.upto(input) do
-    if input > 0
-      inCounter+=1
+    if input > 3999
+      result = "Roman numerals not available above 3999"
+    else input > 0
+      inCounter += 1
       new_roman_numeral_key.each do |number, roman_numeral|
       romanCounter += 1
         if input >= number
@@ -22,4 +24,4 @@ def roman_numerals(input)
   end
 result
 end
-puts roman_numerals(3)
+puts roman_numerals(9)

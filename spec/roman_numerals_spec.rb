@@ -9,4 +9,8 @@ describe('roman_numerals') do
   it("returns multiple roman numerals of a number inputted") do
     roman_numerals(3).should(eq("III"))
   end
+
+  it("returns roman numerals of exceptions such as numbers with 4 or 9") do
+    roman_numerals(9).should(eq("IX"))
+  end
 end
