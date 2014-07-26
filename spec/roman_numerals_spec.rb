@@ -13,4 +13,8 @@ describe('roman_numerals') do
   it("returns roman numerals of exceptions such as numbers with 4 or 9") do
     roman_numerals(9).should(eq("IX"))
   end
+
+  it("returns roman numerals for numbers with more than one digit") do
+    roman_numerals(949).should(eq("CMXLIX"))
+  end
 end

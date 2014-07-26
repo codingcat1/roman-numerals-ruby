@@ -24,4 +24,4 @@ def roman_numerals(input)
   end
 result
 end
-puts roman_numerals(9)
+puts roman_numerals(949)
