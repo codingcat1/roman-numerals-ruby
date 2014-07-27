@@ -18,10 +18,12 @@ def roman_numerals(input)
         if input >= number
           result += roman_numeral
           input -= number
+          break
         end
       end
     end
   end
 result
 end
-puts roman_numerals(949)
+puts roman_numerals(3999)
+

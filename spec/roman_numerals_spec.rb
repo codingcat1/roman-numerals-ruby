@@ -17,4 +17,8 @@ describe('roman_numerals') do
   it("returns roman numerals for numbers with more than one digit") do
     roman_numerals(949).should(eq("CMXLIX"))
   end
+
+  it("returns roman numerals for numbers that expect complex and repeating roman numerals") do
+    roman_numerals(3999).should(eq("MMMCMXCIX"))
+  end
 end
